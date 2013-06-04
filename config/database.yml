@@ -23,3 +23,10 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+#Install pg gem in gemfile for PostgreSQL, however have not updated database.yml
+#development:
+#adapter: PostgreSQL
+#host: localhost
+#username:
+#database: app-dev

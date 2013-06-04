@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 #update '3.2.12' -> '3.2.13' consistent with Tutorial
+#add PostgreSQL for heroku
 gem 'rails', '3.2.13'
+#gem 'pg', '0.12.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,6 +11,7 @@ gem 'rails', '3.2.13'
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
 	gem 'rspec-rails', '2.11.0'
+	gem 'guard-rspec', '1.2.1'
 end
 
 # Gems used only for assets and not required
@@ -26,6 +29,8 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
 	gem 'capybara', '1.1.2'
+	gem 'rb-fsevent', '0.9.1', :require => false
+	gem 'growl', '1.0.3'
 end
 
 group :production do
