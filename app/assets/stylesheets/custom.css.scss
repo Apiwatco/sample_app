@@ -20,11 +20,14 @@ textarea {
 
 .center {
 	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
 }
 
-.center h1 {
+/* .center h1 {
 	margin-bottom: 10px;
-}
+}                           Nesting*/
 
 #deadline {
 	background-color: #00FF7F;
@@ -70,12 +73,16 @@ p {
 	padding-top: 9px;
 	font-weight: bold;
 	line-height: 1;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
-#logo:hover {
+/* #logo:hover {
 	color: #fff;
 	text-decoration: none;
-}
+}                          Nesting*/
 
 /* footer */
 
@@ -84,9 +91,26 @@ footer {
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
 	color: #999;
+	a {
+		color: #555;
+		&:hover {
+			color: #222;
+	}
+}
+small {
+	float: left;
+}
+ul {
+	float: right;
+	list-style: none;
+	li {
+		float: left;
+		margin-left: 10px;
+		}
+	}
 }
 
-footer a {
+/* footer a {
 	color: #555;
 }
 
@@ -106,4 +130,4 @@ footer ul {
 footer ul li {
 	float: left;
 	margin-left: 10px;
-}
+}                            Nesting*/

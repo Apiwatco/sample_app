@@ -2,7 +2,8 @@
 #then insert and execute yield function with :title label
 #got rid of html, body leaving only interior as Refractoring -->
 <div class="center hero-unit">
-		<h1>Paul's Sample App</h1>
+	<% provide(:title, 'Home') %>
+		<h1>Sample App</h1>
 				<p id="deadline">Deadline: July 15, 2013</p>
 		<h2>
 			This is the home page for the 
@@ -10,7 +11,7 @@
 			sample application.
 		</h2>
 	
-		<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
