@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
-
+#ruby '2.0.0'
 #update '3.2.12' -> '3.2.13' consistent with Tutorial
 #add PostgreSQL for heroku
 gem 'rails', '3.2.13'
-gem 'bootstrap-sass', '2.1'
+gem 'bootstrap-sass', '2.3.2.0' #'2.1'
+gem 'bcrypt-ruby', '3.0.1'
 #gem 'pg', '0.12.2'
 
 # Bundle edge Rails instead:
